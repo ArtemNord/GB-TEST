@@ -18,7 +18,22 @@ string [] GetStringArray (int N)
     return TempArray;
 }
 
+string [] SortArray(string [] StringArray1)
+{
+    string [] TempStringArray = new string [StringArray1.Length];
+
+    for (int i = 0; i < StringArray1.Length; i++)
+    {   
+        if (StringArray1[i].Length <= 3)
+        {
+            TempStringArray[i] = StringArray1[i];
+        }A
+    }
+    return TempStringArray;
+}
+
 Console.WriteLine("Какое количество элементов вы хотите ввести?");
 int ElementNumbers = Convert.ToInt32(Console.ReadLine());
 
 string [] FirstString = GetStringArray(ElementNumbers);
+string [] ResultString = SortArray(FirstString);
