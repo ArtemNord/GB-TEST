@@ -27,7 +27,7 @@ string [] SortArray(string [] StringArray1)
         if (StringArray1[i].Length <= 3)
         {
             TempStringArray[i] = StringArray1[i];
-        }A
+        }
     }
     return TempStringArray;
 }
