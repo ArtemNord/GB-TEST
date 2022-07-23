@@ -18,7 +18,17 @@ string [] GetStringArray (int N)
     return TempArray;
 }
 
+void ShowArray(string [] array)
+{
+    Console.Write($"Элементы массива c 3-мя или меньше символов:");
+    for (int i = 0; i < array.Length; i++)
+    {
+            Console.Write($" {array[i]}");
+    }
+}
+
 Console.WriteLine("Какое количество элементов вы хотите ввести?");
 int ElementNumbers = Convert.ToInt32(Console.ReadLine());
 
 string [] FirstString = GetStringArray(ElementNumbers);
+ShowArray(FirstString);
