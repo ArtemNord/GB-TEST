@@ -6,3 +6,19 @@
 //         1) ["hello","2","world",":-)] -> ["2",":-)"]
 //         2) ["1234","1567","-2","computer science"] -> ["-2"]
 //         3) ["Russia","Denmark","Kazan"] -> []
+
+string [] GetStringArray (int N)
+{
+    string [] TempArray = new string [N];
+    for(int i = 0; i != N; i++)
+    {
+        Console.Write($"Введите елемент {i + 1}: ");
+        TempArray[i] = Console.ReadLine();
+    }
+    return TempArray;
+}
+
+Console.WriteLine("Какое количество элементов вы хотите ввести?");
+int ElementNumbers = Convert.ToInt32(Console.ReadLine());
+
+string [] FirstString = GetStringArray(ElementNumbers);
